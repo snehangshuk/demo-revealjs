@@ -32,6 +32,23 @@ or press the <kbd>M</kbd> key.
 Click anywhere on the slide to return to the presentation,<br />
 or use the close button in the menu.
 
+## Take a Moment
+
+::: incremental
+- Press `B` or `.` on your keyboard to enter or exit the 'paused' mode.
+- Press `O` on your keyboard to enter the 'overview' mode.
+- Press `F` on your keyboard to view your presentation in the 'fullscreen' mode.
+:::
+
+::: notes
+
+Press `B` or `.` on your keyboard to enter or exit the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen during a presentation.
+
+Press `O` on your keyboard to enter the 'overview' mode. While you're in this mode, you can still navigate between slides, as if you were at 1,000 feet above your presentation.
+
+Press `F` on your keyboard to view your presentation in the 'fullscreen' mode. Once in fullscreen mode, press the `ESC` key to exit.
+:::
+ 
 # Agenda
 
 - Presentation Framework
