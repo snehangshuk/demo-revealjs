@@ -9,14 +9,35 @@ author: "Snehangshu Karmakar"
 date: "June 14, 2021"
 ---
 
+# Navigating
+
+Slides can be nested inside of each other.
+
+Use the buttons below for navigating:
+
+&nbsp;<a href="#" onclick="goUp(); return false;"><i class="fa fa-chevron-up"></i></a>&nbsp;<br/>
+&nbsp;<a href="#" onclick="goPrev(); return false;"><i class="fa fa-chevron-left"></i></a>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick="goNext(); return false;"><i class="fa fa-chevron-right"></i></a>&nbsp;<br/>
+&nbsp;<a href="#" onclick="goDown(); return false;"><i class="fa fa-chevron-down"></i></a>&nbsp;
+
+**Or** press the <kbd>Space</kbd> key to navigate through all slides.
+
+## Navigating...to menu
+
+See the &nbsp;<a href="#" onclick="toggleMenu(); return false;"><i class="fa fa-bars"></i></a>&nbsp; in the corner?
+
+Click it and the menu will open from the side,<br/>
+or press the <kbd>M</kbd> key.
+<br>
+Click anywhere on the slide to return to the presentation,<br />
+or use the close button in the menu.
+
 # Agenda
 
 - Presentation Framework
 - Features
-- Get started
+- Getting started
 - Explore to see interesting features
-
-![](https://media.giphy.com/media/8wbpmeim0LmdW/giphy.gif){style="max-width: 10%; border: 0; background: None; box-shadow: None;"}
 
 ## Presentation on the Web
 
@@ -60,7 +81,7 @@ You'll need a browser with support for CSS 3D transforms to see it's full capabi
 
 :::
 
-# Example Presentations
+## Example Presentations
 
 [https://github.com/hakimel/reveal.js/wiki/Example-Presentations](https://github.com/hakimel/reveal.js/wiki/Example-Presentations)
 <br><br>
@@ -167,6 +188,24 @@ speaker notes
 
 # {data-background="https://media.giphy.com/media/4lpctAAV9Azpm/giphy.gif" data-background-size="contain"}
 
+<script>
+toggleMenu = () => {
+        let menu = Reveal.getPlugin('menu');
+        if (menu) menu.toggle();
+      };
+goNext = () => {
+        Reveal.next();
+      };
+goPrev = () => {
+        Reveal.prev();
+      };
+goDown = () => {
+        Reveal.down();
+      };
+goUp = () => {
+        Reveal.up();
+      };
+</script>
 
 <style>
 .left {
