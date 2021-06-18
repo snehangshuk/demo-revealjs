@@ -1,0 +1,40 @@
+<style>
+    .fe-persistent-header {
+	position: relative;
+	z-index: 2;
+    }
+    .print-pdf .fe-persistent-header { display: none; }
+    @media print { .fe-persistent-header { display: none; } }
+
+    .fe-persistent-header a {
+	color: #fff;
+	float: right;
+	margin: 30px 60px 20px;
+    }
+    .fe-persistent-header a:nth-child(2) { float: left; }
+    .left {
+	      text-align: left;
+    }
+	    
+    .smallsize {
+	      font-size: 25px;
+     }
+	body {
+	/* make it totally black */
+	background-color: black;
+	}
+
+	.container {
+	display: flex;
+	}
+
+	.col {
+	flex: 1
+	}
+
+	.dark_back {
+	  background-color: rgba(0, 0, 0, 0.9);
+	  color: #fff;
+	  padding: 5px;
+	}
+</style>

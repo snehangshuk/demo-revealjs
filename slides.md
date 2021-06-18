@@ -123,7 +123,11 @@ Their [orginal slide deck sample content](http://lab.hakim.se/reveal-js/) also c
 
 ## How to create the markdown file
 
-![](https://media.giphy.com/media/lqFyE7I04jpDci8UzF/giphy.gif){width=1% style="border: 0; background: None; box-shadow: None;"}
+![](https://media.giphy.com/media/lqFyE7I04jpDci8UzF/giphy.gif){style="max-width: 15%; border: 0; background: None; box-shadow: None;"}
+
+View the markdown of this presention at 
+<small>[https://github.com/snehangshuk/demo-revealjs](https://github.com/snehangshuk/demo-revealjs)</small> 
+
 <div id='dark_back' style="font-size: 50%;">
 If you want the benefits of reveal.js without having to write HTML or Markdown
 try [https://slides.com](https://slides.com). It's a fully-featured visual editor and platform for
@@ -151,11 +155,6 @@ Syntax highlighting, including line numbers.
 
 :::{.element: class="fragment"}
 <p style="font-size: 50%;">Fade in</p>
-```
-:::{.element: class="fragment"}
-Fade in
-:::
-```
 :::
 
 :::{.element: class="fragment fade-out"}
@@ -164,11 +163,6 @@ Fade in
 
 :::{.element: class="fragment highlight-red"}
 <p style="font-size: 50%;">Highlight red</p>
-```
-:::{.element: class="fragment highlight-red"}
-Highlight red
-:::
-```
 :::
 
 :::{.element: class="fragment fade-in-then-out"}
@@ -203,51 +197,5 @@ speaker notes
 
 <h1 style="color:#cb4154;">Questions?</h1>
 
-# {data-background="https://media.giphy.com/media/4lpctAAV9Azpm/giphy.gif" data-background-size="contain"}
+# {data-background-color="blue-powder" data-background="https://media.giphy.com/media/4lpctAAV9Azpm/giphy.gif" background-size="auto 75%"}
 
-<script>
-toggleMenu = () => {
-        let menu = Reveal.getPlugin('menu');
-        if (menu) menu.toggle();
-      };
-goNext = () => {
-        Reveal.next();
-      };
-goPrev = () => {
-        Reveal.prev();
-      };
-goDown = () => {
-        Reveal.down();
-      };
-goUp = () => {
-        Reveal.up();
-      };
-</script>
-
-<style>
-.left {
-      text-align: left;
-}
-    
-.smallsize {
-      font-size: 25px;
-}
-body {
-/* make it totally black */
-background-color: black;
-}
-
-.container {
-display: flex;
-}
-
-.col {
-flex: 1
-}
-
-.dark_back {
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #fff;
-  padding: 5px;
-}
-</style>

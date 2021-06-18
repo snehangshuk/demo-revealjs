@@ -15,11 +15,15 @@ TEMPLATES = templates
 REVEALJS_TEMPLATE = $(TEMPLATES)/template.html
 REVEALJS_SOURCE=revealjs
 REVEALJS_MENU_SOURCE=revealjs-menu
+CSSSRC=custom/custom.css
+SCRIPTJS=custom/script.js
 
 ## Formats
 REVEALJS=-t revealjs -V revealjs-url:$(REVEALJS_SOURCE) --standalone --slide-level 2
 HIGHLIGHTJS=-V highlightjs -L revealjs-codeblock.lua
 MENUJS=-V revealjs-menu-url=$(REVEALJS_MENU_SOURCE) -V menujs
+CSS=-c $(CSSSRC)
+JS=-H $(SCRIPTJS)
 
 ## Filenames
 HTML=$(SRC:.md=.html)
@@ -32,4 +36,4 @@ clean:
 slide: $(HTML)
 
 %.html: %.md
-	pandoc $(REVEALJS) $(MENUJS) $(HIGHLIGHTJS) --template=$(REVEALJS_TEMPLATE) -o $@ $<
+	pandoc $(REVEALJS) $(CSS) $(JS) $(MENUJS) $(HIGHLIGHTJS) --template=$(REVEALJS_TEMPLATE) -o $@ $<
